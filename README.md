@@ -1,10 +1,7 @@
 # Global Description
-This project aims to cover a wide range of concepts of the Ada language. To achieve this, a Bomberman game seems interesting enough without being too much complex.
-A Bomberman game takes place on a map with solid and breakable walls. Each player can use bombs to move through the map and eliminate other players.  
-A server hosts the game, and clients communicate with the server by sending player inputs via UDP.  
-The server communicates with the clients by sending map updates via TCP.  
-The game state is updated only by the server.  
-When all players are dead, a new game with a new map is launched.  
+This project aims to cover a wide range of concepts in the Ada language. To achieve this, a Bomberman game was chosen as a suitable example, being interesting without being too complex. A Bomberman game takes place on a map with solid and breakable walls, where each player can use bombs to navigate the map and eliminate other players.
+
+A server hosts the game, and clients communicate with the server by sending player inputs via UDP. The server sends map updates to the clients via TCP. The game state is updated exclusively by the server. When all players are dead, a new game with a new map is launched.
 
 
 https://github.com/user-attachments/assets/a5cb5334-00c4-40d1-990c-3077253e5c13
