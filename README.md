@@ -18,7 +18,7 @@ For the drawing :
   - Change the foreground/background color
   - Switch to the alternative console
 * System signals
-  - SIGWINCH handlet to know if the console has been resized (only for Unix)
+  - SIGWINCH handler to know if the console has been resized (only for Unix)
 General Ada concepts:
 * Interfacing with C
 * Access, access all
