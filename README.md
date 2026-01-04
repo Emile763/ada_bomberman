@@ -8,7 +8,7 @@ https://github.com/user-attachments/assets/a5cb5334-00c4-40d1-990c-3077253e5c13
 
 
 # Warning
-Some files, such as "communication_manager.adb" and especially "client.adb," need some refactoring to clarify the code.
+Some files, such as "map.adb" and especially "client.adb," need some refactoring to clarify the code.
 
 # Some Concepts Used
 For the drawing :  
