@@ -86,13 +86,6 @@ package body Map is
         end loop;
         This.Entities.Clear;
 
-        --  Resurect all players
-        for player_cursor in This.Players.Iterate loop
-            This.Players (player_cursor).Alive := True;
-            This.Teleport_Player_To_Random_Cell
-               (P_Player_Map.Key (player_cursor));
-        end loop;
-
         --  Generate a random Maze
         Random_Positive.Reset (Positive_Generator);
         Visited.Insert ((1, 1));
@@ -159,7 +152,13 @@ package body Map is
                 end if;
             end loop;
         end loop;
-
+        This.Grid := This.Inert_Grid;
+        --  Resurect all players
+        for player_cursor in This.Players.Iterate loop
+            This.Players (player_cursor).Alive := True;
+            This.Teleport_Player_To_Random_Cell
+               (P_Player_Map.Key (player_cursor));
+        end loop;
     exception
         when E : Constraint_Error | Tasking_Error | Program_Error =>
             Put_Line (Exception_Message (E));
