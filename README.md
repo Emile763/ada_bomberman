@@ -13,6 +13,29 @@ https://github.com/user-attachments/assets/a5cb5334-00c4-40d1-990c-3077253e5c13
 # Warning
 Some files, such as "communication_manager.adb" and especially "client.adb," need some refactoring to clarify the code.
 
+# Some Concepts Used
+For the drawing :  
+* ANSI Code
+  - Clear the console
+  - Move the cursor
+  - Change the foreground/background color
+  - Switch to the alternative console
+* System signals
+  - SIGWINCH handlet to know if the console has been resized (only for Unix)
+General Ada concepts:
+* Interfacing with C
+* Access, access all
+* tagged / limited tagged / subtype/ abstract / interface / protected
+* record with parameters (for polymorphism)
+* Ada std containers -> Hashed_Map; Hashed_Set; Vector
+* task / task types
+* entry (for tasks and protected objects) / select / accept / terminate / delay ...
+* generic packages
+* arrays
+* GNAT sockets
+* Allocation (new) and Deallocation (Ada.Unchecked_Deallocation)
+* Exceptions
+
 # How To Compile
 Gprbuild is needed to build this project.  
 At the root of the repository:
